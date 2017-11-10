@@ -363,6 +363,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    white-space: nowrap;
 
     h1, h2 {
         margin: 0;
@@ -370,7 +371,7 @@ footer {
 
     h1 {
         color: #fff;
-        font-weight: 900;
+        font-weight: 700;
         font-size: 5em;
         text-transform: uppercase;
         letter-spacing: 0.05em;
