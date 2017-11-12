@@ -34,7 +34,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #003366;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -258,7 +258,7 @@ footer {
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        border: 3px solid lighten($text, 25%);
+        border: 3px solid #A3C586;
         text-align:center;
     }
 
@@ -331,7 +331,7 @@ footer {
         left: 0;
         right: 0;
         margin: 0 auto;
-        background: $base-color;
+        background: #A3C586;
     }
 }
 
@@ -350,7 +350,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/code-pic.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -415,7 +415,8 @@ footer {
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        border: 3px solid lighten($base-color, 25%);
+        border: 3px solid #A3C586;
+        // border: 3px solid lighten($base-color, 25%);
         text-align:center;
     }
 
@@ -425,6 +426,7 @@ footer {
         padding-top: 5px;;
     }
 }
+
 
 @keyframes pulsate {
     0% {
@@ -458,6 +460,18 @@ footer {
         color: $text;
         margin: 0;
     }
+}
+
+.center {
+    text-align: center;
+}
+
+.headshot {
+    // position: relative;
+    width: 190px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid rgba(33,125,187,0.8);
 }
 
 /*
@@ -517,7 +531,7 @@ footer {
     h3 {
         font-size: 1.5em;
         font-weight: 300;
-        color: $heading;
+        color: #036;
         display: inline-block;
         margin: 0;
     }
@@ -665,7 +679,7 @@ footer {
     h3 {
         font-size: 1.5em;
         font-weight: 300;
-        color: $heading;
+        color: #036;
         margin: 0 0 15px 0;
     }
 
@@ -752,7 +766,7 @@ footer {
         border-radius: 4px;
         border: none;
         margin-bottom: 10px;
-        background: darken($base-color, 15%);
+        background: #A3C586;
         color: #fff;
         @include transition();
         @include placeholder {
@@ -893,6 +907,7 @@ footer {
 
         h2 {
             font-size: 1.75em;
+            color: #A3C586;
         }
     }
 
@@ -902,6 +917,10 @@ footer {
         p {
             text-align: left;
         }
+    }
+
+    #head-pic {
+        display: none;
     }
 
 }
