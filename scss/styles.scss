@@ -350,7 +350,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/code-pic.jpg);
+    background: url(../images/code-pic.png);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -379,7 +379,7 @@ footer {
     }
 
     h2 {
-        color: lighten($base-color, 25%);
+        color: #A3C586;
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
@@ -471,7 +471,10 @@ footer {
     width: 190px;
     height: 180px;
     border-radius: 50%;
-    border: 4px solid rgba(33,125,187,0.8);
+    border: 4px solid #A3C586;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*
