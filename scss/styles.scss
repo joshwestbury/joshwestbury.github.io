@@ -739,6 +739,7 @@ footer {
     }
 }
 
+
 /*
     -------------------------------
     ----- 10. GitHub Styles -----
@@ -935,7 +936,12 @@ footer {
         display: none;
     }
 
+    #learning {
+        padding-top: 10%;
+    }
+
 }
+
 
 // Small Devices
 @media only screen and (max-width : 768px) {
@@ -1029,6 +1035,15 @@ footer {
             font-size: 0.9em;
             padding: 5px 10px;
         }
+    }
+
+    #git-image {
+        height: 70px;
+        width: 320px;
+    }
+
+    #skills h2 {
+        margin-bottom: 35px;
     }
 
 }
