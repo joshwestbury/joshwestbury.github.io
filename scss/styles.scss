@@ -1,11 +1,4 @@
 /*!
-    Title: Dev Portfolio Template
-    Version: 1.2.1
-    Last Change: 08/28/2017
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
-
     Description: This file contains all the styles associated with the page
     that don't come from third party libraries. This file gets compiled using
     Gulp and send to the /css folder which is then loaded on the page.
@@ -36,6 +29,7 @@
 // Define base and accent colors
 $base-color: #003366;
 $base-color-hover: darken($base-color, 10%);
+$accent-color: #A3C586;
 
 // Define background colors
 $background: #fff;
@@ -258,7 +252,7 @@ footer {
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        border: 3px solid #A3C586;
+        border: 3px solid $accent-color;
         text-align:center;
     }
 
@@ -331,7 +325,7 @@ footer {
         left: 0;
         right: 0;
         margin: 0 auto;
-        background: #A3C586;
+        background: $accent-color;
     }
 }
 
@@ -415,7 +409,7 @@ footer {
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        border: 3px solid #A3C586;
+        border: 3px solid $accent-color;
         // border: 3px solid lighten($base-color, 25%);
         text-align:center;
     }
@@ -451,6 +445,7 @@ footer {
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
+    background-color: #f2f2f5;
 
     h2 {
         color: $heading;
@@ -471,7 +466,7 @@ footer {
     width: 190px;
     height: 180px;
     border-radius: 50%;
-    border: 4px solid #A3C586;
+    border: 4px solid $base-color;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -487,6 +482,7 @@ footer {
     padding: 50px 15px;
     text-align: center;
     border-bottom: 1px solid $border;
+    background: #fff;
 
     h2 {
         color: $heading;
@@ -525,7 +521,7 @@ footer {
 
 .vtimeline-content {
     margin-left: 350px;
-    background: #fff;
+    background: #f2f2f5;
     border: 1px solid #e6e6e6;
     padding: 15px;
     border-radius: 3px;
@@ -598,6 +594,7 @@ footer {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
+    background-color: #f2f2f5;
 
     h2 {
         color: $heading;
@@ -611,6 +608,7 @@ footer {
     padding: 15px;
     border: 1px solid $border;
     text-align: left;
+    background-color: #fff;
 
     h3 {
         font-weight: 500;
@@ -715,6 +713,7 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
+    background-color: #fff;
 
     h2 {
         color: $heading;
@@ -742,7 +741,18 @@ footer {
 
 /*
     -------------------------------
-    ----- 10. Contact Styles -----
+    ----- 10. GitHub Styles -----
+    -------------------------------
+*/
+#git-image {
+    position: relative;
+    height: 100%;
+    width: 75%;
+}
+
+/*
+    -------------------------------
+    ----- 11. Contact Styles -----
     -------------------------------
 */
 
@@ -769,7 +779,7 @@ footer {
         border-radius: 4px;
         border: none;
         margin-bottom: 10px;
-        background: #A3C586;
+        background: $accent-color;
         color: #fff;
         @include transition();
         @include placeholder {
@@ -807,7 +817,7 @@ footer {
 
 /*
     ---------------------------------------
-    ----- 11. Optional Section Styles -----
+    ----- 12. Optional Section Styles -----
     ---------------------------------------
 */
 
@@ -855,7 +865,7 @@ footer {
 
 /*
     -----------------------------
-    ----- 12. Media Queries -----
+    ----- 13. Media Queries -----
     -----------------------------
 */
 
