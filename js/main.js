@@ -1,5 +1,6 @@
 var typed = new Typed('.element', {
     strings: [
+        'Technical Consultant',
         'NetSuite Developer',
         'Integrations Architect',
         'Linguist',
