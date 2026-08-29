@@ -1,286 +1,202 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#f2efe5" />
+    <title>Josh Westbury — Rebuilding</title>
+    <meta
+      name="description"
+      content="Josh Westbury is rebuilding his personal site. Check back soon."
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <style>
+      :root {
+        --paper: #f2efe5;
+        --ink: #1d1e1a;
+        --muted: #66675f;
+        --line: rgba(29, 30, 26, 0.22);
+        --blue: #2658d8;
+      }
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-</head>
+      * {
+        box-sizing: border-box;
+      }
 
-<body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+      html,
+      body {
+        min-height: 100%;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Arial, Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:focus-visible {
+        outline: 2px solid var(--blue);
+        outline-offset: 4px;
+      }
+
+      .page {
+        min-height: 100svh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        padding: 0 clamp(1.25rem, 4vw, 4rem);
+      }
+
+      header,
+      footer {
+        min-height: 4.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        font-size: 0.72rem;
+      }
+
+      header {
+        border-bottom: 1px solid var(--line);
+      }
+
+      header strong {
+        font-size: 0.82rem;
+      }
+
+      .status {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
+        color: var(--muted);
+      }
+
+      .status::before {
+        content: "";
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: var(--blue);
+      }
+
+      main {
+        width: min(100%, 82rem);
+        margin: auto;
+        padding: clamp(5rem, 12vh, 9rem) 0;
+      }
+
+      .eyebrow {
+        margin: 0 0 2rem;
+        color: var(--muted);
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.68rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 12ch;
+        margin: 0;
+        font-size: clamp(4rem, 9.5vw, 9rem);
+        font-weight: 600;
+        letter-spacing: -0.075em;
+        line-height: 0.88;
+      }
+
+      h1 em {
+        color: var(--blue);
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: 400;
+      }
+
+      .note {
+        max-width: 31rem;
+        margin: clamp(3rem, 7vw, 5.5rem) 0 0 auto;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: clamp(1rem, 1.4vw, 1.2rem);
+        line-height: 1.55;
+      }
+
+      .links {
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      .links a {
+        padding-bottom: 0.15rem;
+        border-bottom: 1px solid transparent;
+      }
+
+      .links a:hover {
+        border-color: currentColor;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+      }
+
+      @media (max-width: 600px) {
+        header,
+        footer {
+          min-height: 4rem;
+        }
+
+        main {
+          padding: 5rem 0;
+        }
+
+        h1 {
+          font-size: clamp(3.4rem, 18vw, 4.75rem);
+        }
+
+        .note {
+          margin-left: 0;
+        }
+
+        footer > span {
+          display: none;
+        }
+
+        .links a {
+          padding: 0.75rem 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <strong>Josh Westbury</strong>
+        <span class="status">Site in progress</span>
+      </header>
+
+      <main>
+        <p class="eyebrow">A brief intermission</p>
+        <h1>Something new is <em>taking shape.</em></h1>
+        <p class="note">
+          I’m rebuilding this corner of the internet. In the meantime, you can find me elsewhere
+          below—or check back soon.
+        </p>
+      </main>
+
+      <footer>
+        <span>McKinney, Texas</span>
+        <nav class="links" aria-label="Elsewhere">
+          <a href="https://github.com/joshwestbury">GitHub</a>
+          <a href="https://www.linkedin.com/in/joshwestbury/">LinkedIn</a>
+        </nav>
+      </footer>
     </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
-
-    <div id="lead">
-        <div id="lead-content">
-            <h1> Josh Westbury</h1>
-            <!-- <div class="element"></div> -->
-            <h2 class="element"></h2>
-
-
-            <a href="/docs/jrw-resume.pdf" download="jrw-resume.pdf" class="btn-rounded-white">Download Resume</a>
-            <!-- <a href="#" class="btn-rounded-white">Download Resume</a> -->
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 center">
-                    <h2 class="heading">About Me</h2>
-                    <img class="headshot" id="head-pic"src="/images/headshot.jpg" alt="headshot">
-                </div>
-                <div class="col-md-8">
-                    <p id="hi"><br>
-                        <strong>Hi I'm Josh</strong>. I'm a former academic turned NetSuite Developer and Integrations Architect.
-                    </p><br>
-                    <p>
-                        I'm passionate about providing eloquent solutions to complex problems. In addition to creating NetSuite customizations through SuiteScript and Workflows, I architect and build resilient and scalable integrations between NetSuite, Salesforce, and other systems using tools such as Boomi and Workato.
-                    </p><br>
-                    <p>
-                        I'm currently a Sr. Technical Consultant at <a href="https://www.saascg.com"><b>SaaS Consulting Group</b></a>, and I'm located in the Dallas Area.
-                    </p><br>
-                    <p>
-                       <a href="#contact">Let's Connect</a> 
-                    </p>
-                    <div class="social-top">
-                        <ul>
-                            <li>
-                                <a href="https://github.com/joshwestbury"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/joshwestbury/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/jrwestbury" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
-
-    <div id="skills">
-        <!-- <h2 class="heading">Skills</h2> -->
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-6">
-                        <div>
-                            <h2 class="heading">Proficient In:</h2>
-                                <ul>
-                                    <li>Boomi</li>
-                                    <li>Workato</li>
-                                    <li>JavaScript</li>
-                                    <li>Node.js</li>
-                                    <li>ReactJS</li>
-                                    <li>TypeScript</li>
-                                    <li>SQL (PostgreSQL, SQLite)</li>
-                                    <li>Git</li>
-                                    <li>Express</li>
-                                    <li>NetSuite (SuiteScript 1.0 and 2.0, SuiteBuilder, SuiteFlow, and SuiteClod)</li>
-                                    <li>SQL</li>
-                                    <li>HTML5</li>
-                                    <li>CSS</li>
-                                    <li>RESTful web services</li>
-                                    <li>Cloud Firestore</li>
-                                    <li>Google Cloud Functions</li>
-                                    <li>Redis</li>
-                                    <li>AWS Services (Lambda, EC2, RDS, S3)</li>
-                                    <li>OAuth 2.0</li>
-                                    <li>JWT</li>
-                                </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div id="learning">
-                            <h2 class="heading">Familiarity Wtih:</h2>
-                                <ul>
-                                    <li>Salesforce (Admin Customizations and Configuration, SOQL)</li> 
-                                    <li>Python</li>
-                                    <li>Flask</li>
-                                    <li>Tornado</li>
-                                    <li>Angular (v4.0+)</li>
-                                    <li>WebSocket</li>
-                                    <li>MongoDB</li>
-                                    <li>WebSocket</li>
-                                    <li>Dokku</li>
-                                    <li>Heroku</li>
-                                    <li>Kubernetes</li>
-                                </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        <!-- End #skills -->
-
-        <!-- End #projects -->
-
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-        <div data-date="December 2019 – Present">
-            <h3>SaaS Consulting Group</h3>
-            <h4>Sr. Technical Consultant</h4>
-        </div>    
-        <div data-date="December 2018 – 2019">
-            <h3> Constituent Voice | NWYC</h3>
-            <h4>Lead NetSuite Developer</h4>
-        </div>    
-        <div data-date="December 2017 – 2018">
-            <h3> Constituent Voice | NWYC</h3>
-            <h4>NetSuite Developer</h4>
-        </div>
-        <div data-date="April 2011 – June 2017">
-            <h3>Logos Research Systems | Faithlife Corporation</h3>
-            <h4>Scholar-in-Residence</h4>
-        </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>University of Stellenbosch, South Africa</h3>
-            <span class="education-date">May 2011 - Dec 2014</span>
-            <h4>PhD Linguistics and Ancient Languages</h4>
-
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>University of Stellenbosch, South Africa</h3>
-            <span class="education-date">Jan 2009 - Mar 2010</span>
-            <h4>MA Linguistics and Ancient Languages</h4>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>Houston Baptist University</h3>
-            <span class="education-date">Sept 2002 - Dec 2005</span>
-            <h4>BA Ancient Language and Theology</h4>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <!-- <div id="experience">
-        <h2 class="heading">Git Hub</h2>
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-12">
-                        <img src="http://ghchart.rshah.org/joshwestbury" id="git-image" alt="joshwestbury's Github chart" />
-                </div>
-            </div>
-        </div>
-    </div> -->
-        <!-- End Github -->
-
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/joshwestbury@gmail.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2017 Josh Westbury
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="mailto: joshwestbury@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/joshwestbury" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/josh.westbury.58" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/jrwestbury" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/joshwestbury/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
-
-
-    <script src="/node_modules/typed.js/lib/typed.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
